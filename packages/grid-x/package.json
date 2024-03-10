@@ -1,0 +1,36 @@
+{
+  "name": "@grid-x/grid-x",
+  "version": "1.0.0",
+  "description": "performance table component",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production tsup",
+    "dev": "tsup --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./index.css": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    }
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "@tanstack/react-table": "^8.13.2",
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.64",
+    "react": "^18.2.0"
+  }
+}
